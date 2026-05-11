@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Outfit:wght@300;400;600&display=swap');
+
+.main {
+  background-color: #0a0a0a;
+  min-height: 100vh;
+  color: #ffffff;
+  font-family: 'Outfit', sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 120px 24px 60px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 50px;
+  gap: 30px;
+}
+
+.label {
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: #6366f1;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  margin: 10px 0;
+  letter-spacing: -2px;
+}
+
+.title span { color: #6366f1; }
+
+.desc {
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.btnGroup { display: flex; gap: 15px; }
+
+.solidBtn, .glassBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  border-radius: 14px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+}
+
+.solidBtn { background: #6366f1; color: #fff; border: none; }
+.solidBtn:hover { transform: translateY(-3px); box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4); }
+
+.glassBtn { background: #1a1a1a; color: #fff; border: 1px solid #262626; }
+.glassBtn:hover { background: #262626; }
+
+/* The Viewer Container */
+.viewerFrame {
+  width: 100%;
+  height: 85vh; /* Responsive height based on viewport */
+  background: #111;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+  box-shadow: 0 40px 100px rgba(0,0,0,0.5);
+  position: relative;
+}
+
+.pdfFrame {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: #ffffff; /* Contrast for the PDF content */
+}
+
+.loader {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6366f1;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.footerNote {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #475569;
+}
+
+/* RESPONSIVE BREAKPOINTS */
+@media (max-width: 900px) {
+  .header { flex-direction: column; align-items: flex-start; gap: 25px; }
+  .btnGroup { width: 100%; }
+  .solidBtn, .glassBtn { flex: 1; justify-content: center; }
+  .viewerFrame { height: 600px; }
+}
+
+@media (max-width: 480px) {
+  .container { padding: 80px 20px; }
+  .viewerFrame { height: 450px; border-radius: 16px; }
+  .title { font-size: 1.8rem; }
+}

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Outfit:wght@300;400;600&display=swap');
+
+.main {
+  background-color: #0a0a0a;
+  color: #fff;
+  font-family: 'Outfit', sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Hero Section */
+.hero {
+  height: 60vh;
+  background: linear-gradient(to bottom, #0a0a0a, transparent), 
+              url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1200') center/cover;
+  position: relative;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 60px;
+  background: radial-gradient(circle at top right, rgba(245, 158, 11, 0.1), transparent);
+}
+
+.label { font-size: 0.7rem; font-weight: 800; color: #f59e0b; letter-spacing: 5px; }
+.title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 3.5rem; margin: 10px 0; }
+.title span { color: #f59e0b; }
+.tagline { color: #94a3b8; font-size: 1.1rem; }
+
+/* Content Grid */
+.section { margin: 100px 0; }
+.secTitle { font-family: 'Plus Jakarta Sans'; font-size: 2rem; margin-bottom: 40px; border-left: 5px solid #f59e0b; padding-left: 20px; }
+
+.gridSplit { display: grid; grid-template-columns: 2fr 1fr; gap: 60px; }
+.text { font-size: 1.1rem; line-height: 1.8; color: #cbd5e1; }
+
+.conceptBox { background: #111; padding: 40px; border-radius: 24px; border: 1px solid rgba(245, 158, 11, 0.2); }
+.conceptBox ul { list-style: none; padding: 0; margin-top: 20px; }
+.conceptBox li { margin-bottom: 12px; color: #94a3b8; font-size: 0.95rem; position: relative; padding-left: 20px; }
+.conceptBox li::before { content: '🕸️'; position: absolute; left: 0; }
+
+/* Loop Container */
+.loopContainer { 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  background: #0f0f0f; 
+  padding: 30px; 
+  border-radius: 20px; 
+  border: 1px solid #1a1a1a;
+}
+.loopItem { background: #1a1a1a; padding: 15px 20px; border-radius: 12px; font-weight: 600; font-size: 0.85rem; border: 1px solid #333; }
+.arrow { color: #f59e0b; font-weight: 800; }
+
+/* Control Grid */
+.controlGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.controlCard { background: #111; padding: 30px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05); }
+.controlCard h4 { color: #f59e0b; margin-bottom: 10px; }
+
+/* Power-ups */
+.powerGrid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; }
+.pItem { background: #0f0f0f; padding: 20px; border-radius: 12px; border: 1px solid #222; font-size: 0.9rem; }
+.pItem strong { color: #f59e0b; margin-right: 10px; }
+
+.compCard { background: #111; padding: 40px; border-radius: 24px; text-align: center; font-style: italic; color: #94a3b8; }
+
+@media (max-width: 850px) {
+  .gridSplit, .controlGrid, .powerGrid, .loopContainer { grid-template-columns: 1fr; flex-direction: column; gap: 20px; }
+  .arrow { transform: rotate(90deg); margin: 10px 0; }
+}

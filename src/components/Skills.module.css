@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;500;600&display=swap');
+
+.wrapper {
+  padding: 100px 24px;
+  background-color: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 320px 1fr; /* Compact Side-Header layout */
+  gap: 60px;
+  align-items: start;
+}
+
+/* Side Header Styling */
+.tag {
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: #6366f1;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 2.2rem;
+  line-height: 1.1;
+  color: #0f172a;
+  margin-bottom: 20px;
+  letter-spacing: -1.5px;
+}
+
+.desc {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #64748b;
+  max-width: 250px;
+}
+
+/* Skills Matrix Logic */
+.matrix {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.skillCard {
+  background: #f8fafc;
+  padding: 30px;
+  border-radius: 16px; /* Professional Small-Curve */
+  border: 1px solid #f1f5f9;
+  transition: all 0.4s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.skillCard:hover {
+  background: #0f172a; /* Dark-Mode on Hover for Elite Feel */
+  border-color: #0f172a;
+  transform: translateY(-5px);
+}
+
+.cardTop {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.indicator {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.catName {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1e293b;
+  transition: color 0.3s;
+}
+
+.skillCard:hover .catName {
+  color: #ffffff;
+}
+
+.skillList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skillItem {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #475569;
+  display: flex;
+  gap: 10px;
+  transition: color 0.3s;
+}
+
+.bullet {
+  color: #cbd5e1;
+}
+
+.skillCard:hover .skillItem {
+  color: #94a3b8;
+}
+
+.skillCard:hover .skillItem:hover {
+  color: #ffffff; /* Interactive Individual Skill Highlight */
+}
+
+/* HIGH RESPONSIVE BREAKPOINTS */
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .sideHeader {
+    text-align: center;
+  }
+  .desc {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .title br {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .matrix {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .matrix {
+    grid-template-columns: 1fr;
+  }
+  .wrapper {
+    padding: 60px 20px;
+  }
+  .title {
+    font-size: 1.8rem;
+  }
+  .skillCard {
+    padding: 24px;
+  }
+}

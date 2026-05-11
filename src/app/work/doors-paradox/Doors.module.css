@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Outfit:wght@300;400;600&display=swap');
+
+.main {
+  background-color: #0a0a0a;
+  color: #fff;
+  font-family: 'Outfit', sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Hero */
+.hero {
+  height: 50vh;
+  background: linear-gradient(to top, #0a0a0a, transparent), 
+              url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1200') center/cover;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 60px;
+}
+
+.label { font-size: 0.7rem; font-weight: 800; color: #6366f1; letter-spacing: 5px; }
+.title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 3.5rem; margin: 10px 0; }
+.title span { color: #f59e0b; }
+.tagline { color: #94a3b8; font-size: 1.1rem; }
+
+/* Sections */
+.section { margin: 100px 0; }
+.secTitle { font-family: 'Plus Jakarta Sans'; font-size: 2rem; margin-bottom: 40px; border-left: 5px solid #6366f1; padding-left: 20px; }
+
+.grid, .gridSplit { display: grid; grid-template-columns: 2fr 1fr; gap: 40px; }
+.text { font-size: 1.1rem; line-height: 1.8; color: #cbd5e1; }
+
+.specBox { background: #111; padding: 30px; border-radius: 20px; }
+.specItem { margin-bottom: 10px; font-size: 0.9rem; }
+
+/* Loop */
+.loopContainer { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.loopCard { background: #151515; padding: 30px; border-radius: 20px; flex: 1; text-align: center; border: 1px solid #222; }
+.loopCard h4 { color: #6366f1; margin-bottom: 10px; }
+.loopArrow { font-size: 2rem; color: #333; }
+
+/* Art & Levels */
+.artGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.artItem { background: #111; padding: 30px; border-radius: 20px; }
+
+.levelRow { display: flex; justify-content: space-between; align-items: center; background: #111; padding: 20px 30px; border-radius: 12px; margin-bottom: 10px; }
+.levelRow span:first-child { font-weight: 800; color: #f59e0b; }
+
+/* UI Box */
+.wireframeBox { background: #111; padding: 40px; border-radius: 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.wfColumn h4 { color: #6366f1; margin-bottom: 20px; }
+.wfColumn ul { list-style: none; padding: 0; }
+.wfColumn li { margin-bottom: 10px; color: #94a3b8; font-size: 0.95rem; }
+
+.mBox { background: #151515; padding: 40px; border-radius: 24px; border: 1px solid #222; }
+
+@media (max-width: 850px) {
+  .grid, .gridSplit, .loopContainer, .artGrid, .wireframeBox { grid-template-columns: 1fr; flex-direction: column; }
+  .loopArrow { transform: rotate(90deg); }
+}
