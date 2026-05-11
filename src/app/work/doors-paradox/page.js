@@ -25,49 +25,36 @@ export default function DoorsParadox() {
             <div className={styles.content}>
               <p className={styles.text}>
                 The game follows a mysterious cat, a messenger of chaos, who guides players through the duality of <strong>ORDER and CHAOS</strong>. 
-                By solving intricate puzzles on magical doors, players collect hidden notes that gradually explain the lore and the paradox of the world.
+                By solving intricate puzzles on magical doors, players collect hidden notes that explain the lore.
               </p>
+              <img src="/3.png" alt="Doors Overview" className={styles.inlineImg} />
             </div>
             <div className={styles.specBox}>
               <div className={styles.specItem}><strong>Developer:</strong> Big Loop Studios</div>
               <div className={styles.specItem}><strong>Publisher:</strong> Snapbreak</div>
-              <div className={styles.specItem}><strong>Platform:</strong> PC (Steam/Epic), Mobile</div>
+              <div className={styles.specItem}><strong>Platform:</strong> PC & Mobile</div>
+              <img src="/2.png" alt="Content Index" className={styles.specImg} />
             </div>
           </div>
         </section>
 
-        {/* Core Loop & Mechanics */}
+        {/* Core Loop Section */}
         <section className={styles.section}>
           <h2 className={styles.secTitle}>Core Gameplay Loop</h2>
-          <div className={styles.loopContainer}>
-            <div className={styles.loopCard}>
-              <h4>Gameplay</h4>
-              <p>Solving independent 3D diorama puzzles (Doors).</p>
-            </div>
-            <div className={styles.loopArrow}>→</div>
-            <div className={styles.loopCard}>
-              <h4>Rewards</h4>
-              <p>Acquiring notes and unfolding the mystery.</p>
-            </div>
-            <div className={styles.loopArrow}>→</div>
-            <div className={styles.loopCard}>
-              <h4>Timegate</h4>
-              <p>Progression based on level completion and chapter unlocks.</p>
-            </div>
+          <div className={styles.loopBox}>
+            <img src="/4.png" alt="Core Loop Diagram" className={styles.fullWidthImg} />
+            <p className={styles.caption}>Progression cycle: Gameplay → Rewards → Timegate.</p>
           </div>
         </section>
 
-        {/* Visual Identity */}
+        {/* Art Style Section */}
         <section className={styles.section}>
-          <h2 className={styles.secTitle}>Art Style</h2>
-          <div className={styles.artGrid}>
-            <div className={styles.artItem}>
+          <h2 className={styles.secTitle}>Visual Identity</h2>
+          <div className={styles.artSection}>
+            <img src="/6.png" alt="Art Style Reference" className={styles.featureImg} />
+            <div className={styles.artContent}>
               <h3>Toony 3D Style</h3>
-              <p>Features hand-painted textures with bright, shiny colors to create a surreal atmosphere.</p>
-            </div>
-            <div className={styles.artItem}>
-              <h3>Hard Surface Modeling</h3>
-              <p>Detailed mechanical and architectural diorama designs.</p>
+              <p>Features hand-painted textures with bright, shiny colors and detailed hard-surface modeling.</p>
             </div>
           </div>
         </section>
@@ -75,52 +62,34 @@ export default function DoorsParadox() {
         {/* Level Architecture */}
         <section className={styles.section}>
           <h2 className={styles.secTitle}>Level Difficulty</h2>
-          <div className={styles.levelTable}>
-            <div className={styles.levelRow}>
-              <span>Chapter 1</span>
-              <span>22 Levels</span>
-              <p>Introductory puzzles and mechanics.</p>
-            </div>
-            <div className={styles.levelRow}>
-              <span>Chapter 2 & 3</span>
-              <span>18 Levels Each</span>
-              <p>Advanced obstacles and complex themes.</p>
-            </div>
+          <div className={styles.difficultyBox}>
+            <img src="/5.png" alt="Level Difficulty Info" className={styles.fullWidthImg} />
           </div>
         </section>
 
         {/* UI/UX Wireframing */}
         <section className={styles.section}>
-          <h2 className={styles.secTitle}>UI Wireframing</h2>
-          <div className={styles.wireframeBox}>
-            <div className={styles.wfColumn}>
-              <h4>Main Menu Flow</h4>
-              <ul>
-                <li>Start → Play / Settings / Notes</li>
-                <li>Quit Game / Reset Progress</li>
-              </ul>
-            </div>
-            <div className={styles.wfColumn}>
-              <h4>Settings Options</h4>
-              <ul>
-                <li>Resolution / V-Sync / Screen Mode</li>
-                <li>Audio (Music/SFX) / Language</li>
-              </ul>
-            </div>
+          <h2 className={styles.secTitle}>UI Wireframing & Flow</h2>
+          <div className={styles.wireframeContainer}>
+            <img src="/9.png" alt="UI Wireframe Diagram" className={styles.fullWidthImg} />
           </div>
         </section>
 
-        {/* Monetization & Reception */}
+        {/* Monetization & Market */}
         <section className={styles.section}>
-          <div className={styles.gridSplit}>
-            <div className={styles.mBox}>
-              <h3>Monetization</h3>
-              <p>Premium Purchase Model: <strong>Rs. 539 (Epic)</strong> | <strong>Rs. 690 (Steam)</strong>.</p>
+          <h2 className={styles.secTitle}>Monetization & Reception</h2>
+          <div className={styles.marketGrid}>
+            <div className={styles.marketCard}>
+              <img src="/7.png" alt="Epic Games Pricing" className={styles.marketImg} />
+              <p>Premium Purchase: Rs. 539 on Epic / Rs. 690 on Steam.</p>
             </div>
-            <div className={styles.mBox}>
-              <h3>Player Reception</h3>
-              <p><strong>"Very Positive"</strong> on Steam. Praised for relaxing "popcorn-style" puzzles and high player agency.</p>
+            <div className={styles.marketCard}>
+              <img src="/10.png" alt="Player Reviews" className={styles.marketImg} />
+              <p>Highly praised for relaxing "popcorn-style" puzzles.</p>
             </div>
+          </div>
+          <div className={styles.steamOverview}>
+             <img src="/8.png" alt="Steam Store Page" className={styles.fullWidthImg} />
           </div>
         </section>
       </div>

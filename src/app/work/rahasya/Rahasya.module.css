@@ -1,57 +1,87 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Outfit:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Space+Grotesk:wght@300;400;600&display=swap');
 
 .main {
   background-color: #050505;
   color: #fff;
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .container {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 24px;
 }
 
-/* Hero */
+/* Hero Section */
 .hero {
-  height: 60vh;
-  background: linear-gradient(to top, #050505, transparent), 
-              url('https://images.unsplash.com/photo-1505833359648-43cc71910793?q=80&w=1600') center/cover;
+  height: 70vh;
+  background: linear-gradient(to top, #050505, transparent 80%), 
+              url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=1600') center/cover;
   display: flex;
-  align-items: flex-end;
-  padding-bottom: 60px;
+  align-items: center;
 }
 
-.label { font-size: 0.7rem; font-weight: 800; color: #6366f1; letter-spacing: 5px; }
-.title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: clamp(3rem, 10vw, 5rem); margin: 10px 0; }
+.label { font-size: 0.75rem; font-weight: 800; color: #6366f1; letter-spacing: 5px; text-transform: uppercase; }
+.title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: clamp(3.5rem, 12vw, 6.5rem); margin: 15px 0; line-height: 1; }
 .title span { color: #f59e0b; }
-.tagline { color: #94a3b8; font-style: italic; }
+.tagline { color: #94a3b8; font-size: 1.2rem; margin-bottom: 30px; border-left: 3px solid #f59e0b; padding-left: 15px; }
 
-/* Chapter Cards */
-.secTitle { font-family: 'Plus Jakarta Sans'; font-size: 2rem; margin: 80px 0 40px; color: #f59e0b; }
-.chapterGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
-.chCard { background: #0f0f0f; padding: 30px; border-radius: 20px; border: 1px solid #1a1a1a; }
-.chNum { color: #6366f1; font-weight: 800; margin-right: 10px; }
-.chCard h3 { font-family: 'Plus Jakarta Sans'; display: inline-block; margin-bottom: 15px; }
-.chCard p { color: #94a3b8; line-height: 1.6; font-size: 0.95rem; }
+.primaryBtn {
+  display: inline-block;
+  background: #fff;
+  color: #000;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
 
-/* Survivor Cards */
+.primaryBtn:hover { transform: scale(1.05); background: #f59e0b; }
+
+/* PDF Section */
+.pdfSection { margin: 60px 0; }
+.pdfWrapper {
+  height: 600px;
+  background: #111;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid #333;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+}
+
+.pdfFrame { width: 100%; height: 100%; border: none; }
+
+/* Chapters & Survivors */
+.secTitle { font-family: 'Plus Jakarta Sans'; font-size: 2.2rem; margin: 100px 0 40px; color: #f59e0b; }
+.chapterGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+.chCard { background: #0f0f0f; padding: 40px; border-radius: 24px; border: 1px solid #1a1a1a; transition: 0.3s; }
+.chCard:hover { border-color: #6366f1; }
+.chNum { font-size: 1.5rem; color: #6366f1; font-weight: 800; margin-right: 15px; opacity: 0.5; }
+
 .sGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
-.sCard { background: #111; padding: 24px; border-radius: 16px; border-left: 4px solid #6366f1; }
-.sTop { display: flex; justify-content: space-between; margin-bottom: 10px; }
-.sRole { font-size: 0.65rem; color: #f59e0b; font-weight: 800; text-transform: uppercase; }
-.sCard p { font-size: 0.85rem; color: #64748b; line-height: 1.5; }
+.sCard { background: #111; padding: 30px; border-radius: 20px; border-bottom: 4px solid #333; transition: 0.3s; }
+.sCard:hover { border-bottom-color: #f59e0b; background: #151515; }
+.sTop h4 { font-family: 'Plus Jakarta Sans'; font-size: 1.1rem; margin-bottom: 5px; }
+.sRole { font-size: 0.7rem; color: #6366f1; font-weight: 800; text-transform: uppercase; display: block; margin-bottom: 15px; }
+.sCard p { font-size: 0.9rem; color: #64748b; line-height: 1.6; }
 
 /* Epilogue */
-.epilogue { background: #111; padding: 60px; border-radius: 30px; margin: 100px 0; border: 1px solid #222; text-align: center; }
-.epilogue p { max-width: 800px; margin: 20px auto; color: #cbd5e1; line-height: 1.8; }
-
-/* Responsive */
-@media (max-width: 768px) {
-  .hero { height: 45vh; 
-    margin-top: -100px;
-    margin-bottom: -100px;
+.epilogue { 
+  background: radial-gradient(circle at top right, #111, #050505);
+  padding: 80px 40px; 
+  border-radius: 40px; 
+  margin: 120px 0; 
+  border: 1px solid #222; 
+  text-align: center; 
 }
-  .title { font-size: 2.8rem; }
-  .epilogue { padding: 30px; }
+.epilogue h2 { font-family: 'Plus Jakarta Sans'; font-size: 2.5rem; margin-bottom: 20px; }
+.epilogue p { max-width: 700px; margin: 0 auto; color: #cbd5e1; font-size: 1.1rem; line-height: 1.8; }
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+  .hero { height: 60vh; text-align: center; }
+  .tagline { border-left: none; padding-left: 0; }
+  .pdfWrapper { height: 400px; }
+  .epilogue h2 { font-size: 1.8rem; }
 }

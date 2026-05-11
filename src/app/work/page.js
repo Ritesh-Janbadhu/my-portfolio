@@ -12,7 +12,7 @@ const projects = [
     category: "Narrative Design",
     context: "Flight 1-472 Survival Mystery",
     tags: ["Horror", "Mystery", "Quest"],
-    image: "https://images.unsplash.com/photo-1505833359648-43cc71910793?q=80&w=1200",
+    image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1200",
     color: "#f59e0b"
   },
   {
@@ -30,7 +30,7 @@ const projects = [
     category: "Economy Design",
     context: "Mobile IAP Balancing",
     tags: ["Excel", "Retention", "Math"],
-    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1200",
+    image: "/1.png",
     color: "#10b981"
   },
   {
@@ -39,7 +39,7 @@ const projects = [
     category: "System Design",
     context: "Atmospheric Puzzle Mechanics",
     tags: ["Logic", "Environmental", "PC"],
-    image: "https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=1200",
+    image: "/crytilines.png",
     color: "#22d3ee"
   },
   {
@@ -48,7 +48,7 @@ const projects = [
     category: "Lead Design",
     context: "Dimension-Hopping Action",
     tags: ["Mechanics", "3D", "Gadgets"],
-    image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1200",
+    image: "/1.webp",
     color: "#ef4444"
   },
    {
@@ -57,7 +57,7 @@ const projects = [
     category: "Lead Design",
     context: "Dimension-Hopping Action",
     tags: ["Mechanics", "3D", "Gadgets"],
-    image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1200",
+    image: "/crazy-doc (1).png",
     color: "#ef4444"
   }
 ];

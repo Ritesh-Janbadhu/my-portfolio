@@ -18,29 +18,29 @@ const projects = [
     id: "02",
     title: "Rahasya: Vol 1",
     role: "Lead Narrative Designer",
-    desc: "A survival mystery following 8 survivors stranded on a mysterious island after Flight 1-472 crash.",
-    image: "https://images.unsplash.com/photo-1505833359648-43cc71910793?q=80&w=1200",
-    tags: ["Survival", "Mystery", "Quest"],
+    desc: "An interactive narrative bible exploring the survival mystery of Flight 1-472. Follow the story of 8 survivors.",
+    image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1200",
+    tags: ["Story", "Mystery", "Quest"],
     color: "#f59e0b",
     link: "/work/rahasya"
   },
   {
     id: "03",
-    title: "Idle Casual Titles",
+    title: "Doors: Paradox",
     role: "Economy Designer",
     desc: "Designing and balancing game economies to optimize player retention and IAP monetization strategies.",
-    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1200",
-    tags: ["Economy", "IAP", "Excel"],
+    image: "/1.png",
+    tags: ["Retention", "IAP", "Math"],
     color: "#10b981",
-    link: "/work/idle-systems"
+    link: "/work/doors-paradox"
   },
   {
     id: "04",
-    title: "Crystalline Crystal",
+    title: "Crystalline",
     role: "System Designer",
     desc: "Atmospheric puzzle mechanics based on crystal refraction and environmental storytelling.",
-    image: "https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=1200",
-    tags: ["Puzzles", "Logic", "Visuals"],
+    image: "/crytilines.png",
+    tags: ["Logic", "Environmental", "PC"],
     color: "#22d3ee",
     link: "/work/crystalline"
   },
@@ -49,10 +49,20 @@ const projects = [
     title: "Spider: Dimension Rider",
     role: "Lead Designer",
     desc: "Fast-paced action title exploring dimension-hopping mechanics and futuristic gadgetry.",
-    image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1200",
-    tags: ["Action", "3D", "Mechanics"],
+    image: "/1.webp",
+    tags: ["Mechanics", "3D", "Gadgets"],
     color: "#ef4444",
     link: "/work/spider-rider"
+  },
+  {
+    id: "06",
+    title: "Crazy Doc",
+    role: "Lead Designer",
+    desc: "Dimension-hopping action runner with high-intensity mechanics and futuristic environments.",
+    image: "/crazy-doc (1).png",
+    tags: ["Mechanics", "3D", "Action"],
+    color: "#8b5cf6",
+    link: "/work/crazy-doc"
   }
 ];
 
@@ -143,7 +153,7 @@ export default function Projects() {
             ))}
           </div>
 
-          <div className={styles.navBar}>
+          <div className={styles.navBar} style={{ gridTemplateColumns: `repeat(${projects.length}, 1fr)` }}>
             {projects.map((p, i) => (
               <button 
                 key={p.id}

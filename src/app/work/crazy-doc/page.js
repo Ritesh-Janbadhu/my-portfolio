@@ -6,7 +6,7 @@ import Footer from '@/components/Footer';
 export default function CrazyDocPage() {
   return (
     <main className={styles.main}>
-      {/* Hero Section */}
+      {/* Hero Section - Psychedelic Visual */}
       <header className={styles.hero}>
         <div className={styles.heroOverlay}>
           <div className={styles.container}>
@@ -18,15 +18,13 @@ export default function CrazyDocPage() {
       </header>
 
       <div className={styles.container}>
-        {/* Story & Concept */}
+        {/* Story Section */}
         <section className={styles.section}>
           <h2 className={styles.secTitle}>The Mission</h2>
           <div className={styles.gridSplit}>
             <div className={styles.content}>
               <p className={styles.text}>
-                You play as a rogue doctor who has discovered the only antidote to a devastating global virus. 
-                However, a powerful organization wants the cure for themselves. You must run, jump, and fight 
-                to escape their grasp and deliver the antidote to the world.
+                Play as a doc who holds the antidote to a global virus. Escape the organization's grasp and run to save the world without getting caught.
               </p>
               <div className={styles.specs}>
                 <div className={styles.spec}><strong>Platform:</strong> Android & iOS</div>
@@ -34,69 +32,70 @@ export default function CrazyDocPage() {
                 <div className={styles.spec}><strong>Model:</strong> Free to Play</div>
               </div>
             </div>
-            <div className={styles.conceptBox}>
-              <h3>Core Mechanics</h3>
-              <ul>
-                <li>Left/Right Shift & Jump/Crouch</li>
-                <li>Melee: Jump towards enemy</li>
-                <li>Ranged: Tap on enemy to attack</li>
-              </ul>
+            <div className={styles.imageBox}>
+              <img src="/crazy-doc (3).png" alt="Crazy Doc Story" className={styles.sideImg} />
             </div>
           </div>
         </section>
 
-        {/* Gameplay Loop */}
+        {/* Gameplay Mechanics */}
         <section className={styles.section}>
-          <h2 className={styles.secTitle}>Core Loop</h2>
-          <div className={styles.loopContainer}>
-            <div className={styles.loopItem}>Start / Run</div>
-            <div className={styles.arrow}>→</div>
-            <div className={styles.loopItem}>Collect Power-ups</div>
-            <div className={styles.arrow}>→</div>
-            <div className={styles.loopItem}>Engage / Get Killed</div>
-            <div className={styles.arrow}>→</div>
-            <div className={styles.loopItem}>Revive / Watch Ads</div>
+          <h2 className={styles.secTitle}>Mechanics & Controls</h2>
+          <div className={styles.mechanicLayout}>
+            <img src="/crazy-doc (6).png" alt="Game Mechanics Diagram" className={styles.fullWidthImg} />
+            <div className={styles.mechanicText}>
+              <p>Precise movement with Shift & Jump controls combined with unique Melee and Ranged attack patterns.</p>
+            </div>
           </div>
         </section>
 
-        {/* The Swiss Army Stick */}
+        {/* Core Loop Section */}
+        <section className={styles.section}>
+          <h2 className={styles.secTitle}>Core Gameplay Loop</h2>
+          <div className={styles.loopBox}>
+            <img src="/crazy-doc (12).png" alt="Core Loop Flowchart" className={styles.fullWidthImg} />
+          </div>
+        </section>
+
+        {/* The Swiss Army Stick Modes */}
         <section className={styles.section}>
           <h2 className={styles.secTitle}>The Multi-Mode Stick</h2>
-          <div className={styles.stickGrid}>
-            <div className={styles.stickCard}>
-              <h4>Cane Mode</h4>
-              <p>Standard movement and basic melee strikes.</p>
+          <div className={styles.stickContent}>
+             <img src="/crazy-doc (7).png" alt="Modes of Stick" className={styles.fullWidthImg} />
+             <div className={styles.stickDesc}>
+                <p>Switch between <strong>Cane Mode</strong>, <strong>Gun Mode</strong>, and <strong>Rope Mode</strong> to tackle different environmental challenges.</p>
+             </div>
+          </div>
+        </section>
+
+        {/* Inventory & Economy */}
+        <section className={styles.section}>
+          <h2 className={styles.secTitle}>Power-ups & Currency</h2>
+          <div className={styles.powerSection}>
+            <img src="/crazy-doc (8).png" alt="Power-ups and Currency" className={styles.fullWidthImg} />
+          </div>
+        </section>
+
+        {/* Visual Identity & Competition */}
+        <section className={styles.section}>
+          <h2 className={styles.secTitle}>Art Style & Market</h2>
+          <div className={styles.marketGrid}>
+            <div className={styles.marketCard}>
+               <img src="/crazy-doc (11).png" alt="Art Reference" className={styles.marketImg} />
+               <p>Art Reference: High-contrast action environments.</p>
             </div>
-            <div className={styles.stickCard}>
-              <h4>Gun Mode</h4>
-              <p>Transforms for high-speed projectile attacks.</p>
-            </div>
-            <div className={styles.stickCard}>
-              <h4>Rope Mode</h4>
-              <p>Used for grappling and tactical maneuvering.</p>
+            <div className={styles.marketCard}>
+               <img src="/crazy-doc (9).png" alt="Competitors" className={styles.marketImg} />
+               <p>Market Position: Targeting fans of Blade of Brim and Banditos.</p>
             </div>
           </div>
         </section>
 
-        {/* Economy & Power-ups */}
+        {/* Level Mockup Section */}
         <section className={styles.section}>
-          <h2 className={styles.secTitle}>Inventory & Economy</h2>
-          <div className={styles.powerGrid}>
-            <div className={styles.pItem}><strong>Enerjons:</strong> Main Energy Currency</div>
-            <div className={styles.pItem}><strong>Duollets:</strong> Specialized Ammunition</div>
-            <div className={styles.pItem}><strong>Skoes:</strong> Speed-boost Roller Skates</div>
-            <div className={styles.pItem}><strong>Boomer's Stick:</strong> Signature Weapon</div>
-          </div>
-        </section>
-
-        {/* Competitive Landscape */}
-        <section className={styles.section}>
-          <h2 className={styles.secTitle}>Market Positioning</h2>
-          <div className={styles.compGrid}>
-            <div className={styles.compCard}>
-              <p>Inspired by <strong>Blade of Brim</strong> (10M+ Downloads) and <strong>Run and Gun: Banditos</strong>.</p>
-              <p>Visual Style: Stylized 3D low-poly with vibrant, high-contrast environments.</p>
-            </div>
+          <h2 className={styles.secTitle}>Game Mockup</h2>
+          <div className={styles.mockupContainer}>
+            <img src="/crazy-doc (5).png" alt="Crazy Doc Mockup" className={styles.mockImg} />
           </div>
         </section>
       </div>

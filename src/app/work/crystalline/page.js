@@ -4,6 +4,8 @@ import styles from './Crystalline.module.css';
 import Footer from '@/components/Footer';
 
 export default function CrystallineDetail() {
+  const figmaLink = "https://www.figma.com/proto/SkyYSXhX9c8QRgTOuJZ3yz/Untitled?page-id=185%3A2&node-id=187-25&node-type=canvas&viewport=-25%2C617%2C0.07&t=tpxOjCCe9dkuIrK5-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=187%3A25";
+
   return (
     <main className={styles.main}>
       {/* Hero Section */}
@@ -11,8 +13,15 @@ export default function CrystallineDetail() {
         <div className={styles.heroOverlay}>
           <div className={styles.container}>
             <span className={styles.label}>ADVENTURE CASE STUDY</span>
-            <h1 className={styles.title}>CRYSTILLINE<span> CRYSTAL</span></h1>
+            <h1 className={styles.title}>CRYSTALLINE<span>.</span></h1>
             <p className={styles.tagline}>Dive deep to break the curse. The ocean is your only sanctuary.</p>
+            
+            <a href={figmaLink} target="_blank" rel="noopener noreferrer" className={styles.playBtn}>
+              Play Prototype
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
           </div>
         </div>
       </header>
@@ -30,7 +39,7 @@ export default function CrystallineDetail() {
               <div className={styles.specs}>
                 <div className={styles.spec}><strong>Engine:</strong> Unity</div>
                 <div className={styles.spec}><strong>Platform:</strong> Desktop</div>
-                <div className={styles.spec}><strong>Genre:</strong> Top-Down, Adventure</div>
+                <div className={styles.spec}><strong>Genre:</strong> Top-Down Adventure</div>
               </div>
             </div>
             <div className={styles.roleCard}>
@@ -45,46 +54,40 @@ export default function CrystallineDetail() {
           </div>
         </section>
 
-        {/* Roles & Responsibilities Grid */}
+        {/* Design Contributions Grid */}
         <section className={styles.section}>
           <h2 className={styles.secTitle}>Design Contributions</h2>
           <div className={styles.featureGrid}>
             <div className={styles.fCard}>
               <div className={styles.fIcon}>🔱</div>
               <h4>Narrative & World</h4>
-              <p>Conceptualized the survival-driven narrative and the lore behind the "Human Curse" and crystal-dependency mechanics.</p>
+              <p>Conceptualized the survival-driven narrative and the "Human Curse" mechanics.</p>
             </div>
             <div className={styles.fCard}>
               <div className={styles.fIcon}>🌊</div>
               <h4>Level Design</h4>
-              <p>Designed the infinite vertical ocean levels, ensuring a balanced difficulty curve as the player dives deeper into the abyss.</p>
+              <p>Designed infinite vertical levels with a balanced difficulty curve for deep-sea diving.</p>
             </div>
             <div className={styles.fCard}>
               <div className={styles.fIcon}>🎨</div>
-              <h4>UI/UX Design</h4>
-              <p>Built the complete UI/UX in Figma, including wireframing and prototyping the HUD to track crystals and the remaining time.</p>
+              <h4>UI/UX Prototyping</h4>
+              <p>Built complete HUD and menu flows in Figma to track crystals and oxygen levels.</p>
             </div>
             <div className={styles.fCard}>
               <div className={styles.fIcon}>🎵</div>
-              <h4>Sound & SFX</h4>
-              <p>Created immersive underwater SFX and edited ambient music to emphasize the pressure of the deep sea and the ticking clock.</p>
+              <h4>Atmospheric Sound</h4>
+              <p>Created immersive underwater SFX to emphasize the pressure of the deep sea.</p>
             </div>
           </div>
         </section>
 
-        {/* Visual Archive */}
-        {/* <section className={styles.section}>
-          <h2 className={styles.secTitle}>Visual Archive</h2>
-          <div className={styles.gallery}>
-            <div className={styles.imgPlaceholder}>[OCEAN TRENCH LEVEL DESIGN]</div>
-            <div className={styles.imgPlaceholder}>[FIGMA UI PREVIEW]</div>
-          </div>
-        </section> */}
-
         {/* Technical Summary */}
         <section className={styles.conclusion}>
           <h3>Project Summary</h3>
-          <p>Integrated time-pressure mechanics with a top-down adventure aesthetic, delivering a high-stakes survival loop through atmospheric sound and level design.</p>
+          <p>Integrated time-pressure mechanics with a top-down adventure aesthetic, delivering a high-stakes survival loop through atmospheric sound and responsive level design.</p>
+          <a href={figmaLink} target="_blank" rel="noopener noreferrer" className={styles.secondaryBtn}>
+            View Design Files in Figma
+          </a>
         </section>
       </div>
 

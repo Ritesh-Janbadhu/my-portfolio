@@ -4,47 +4,23 @@ import styles from './Rahasya.module.css';
 import Footer from '@/components/Footer';
 
 const survivors = [
-  { id: 1, name: "Puja (23)", role: "Nurse", bio: "Firm-willed and empathetic. Working in an Indian Army hospital, she instinctively assumes control, nursing the injured and maintaining group unity." },
-  { id: 2, name: "Ajay (29)", role: "Electronics Engineer", bio: "Strategic and able problem solver. He instantly becomes the technician of the group, repairing and reusing wreckage." },
-  { id: 3, name: "Rahul (19)", role: "Student", bio: "Courageous but hasty. He fights fear and self-doubt but yearns to be shown useful to the group." },
-  { id: 4, name: "Meera (51)", role: "Journalist", bio: "Perceptive and cynical. She keeps a record of their adventures and investigates the island's secrets." },
-  { id: 5, name: "Vikram (47)", role: "Doctor", bio: "Logical and systematic. He dresses wounds and keeps a cool head in times of crisis." },
-  { id: 6, name: "Ravi (60)", role: "Ex-Army Officer", bio: "Experienced but physically impaired. Offers strategic advice and moral support like a field officer." },
-  { id: 7, name: "Elena (32)", role: "Foreign Backpacker", bio: "Adventurous and pragmatic. Brings survival experience from her travels and assists in food foraging." },
-  { id: 8, name: "Nitya (10)", role: "Orphaned Girl", trait: "Scared but tough. She holds on to Puja as a mother figure after losing her parents." }
+  { id: 1, name: "Puja (23)", role: "Nurse", bio: "Firm-willed and empathetic. Instinctively assumes control, nursing the injured." },
+  { id: 2, name: "Ajay (29)", role: "Electronics Engineer", bio: "Strategic problem solver. Repairs and reuses wreckage as the group's technician." },
+  { id: 3, name: "Rahul (19)", role: "Student", bio: "Courageous but hasty. Fights fear to prove his usefulness to the survivors." },
+  { id: 4, name: "Meera (51)", role: "Journalist", bio: "Perceptive and cynical. Keeps a record of adventures and investigates secrets." },
+  { id: 5, name: "Vikram (47)", role: "Doctor", bio: "Logical and systematic. Keeps a cool head and dresses wounds in crisis." },
+  { id: 6, name: "Ravi (60)", role: "Ex-Army Officer", bio: "Experienced but physically impaired. Offers strategic advice and moral support." },
+  { id: 7, name: "Elena (32)", role: "Foreign Backpacker", bio: "Adventurous and pragmatic. Brings survival and foraging experience." },
+  { id: 8, name: "Nitya (10)", role: "Orphaned Girl", bio: "Scared but tough. Holds on to Puja as a mother figure after the disaster." }
 ];
 
 const chapters = [
-  {
-    num: "01",
-    title: "The Flight",
-    content: "Puja boards an international flight for her friend's wedding. Halfway through, a massive explosion blows up from the engine. Oxygen masks fall, and the plane dives into a state of pandemonium before a deafening crash."
-  },
-  {
-    num: "02",
-    title: "Stranded",
-    content: "Puja awakens on a beach surrounded by smoldering wreckage. Of hundreds on board, only she and eight others survived. They huddle near a faint fire, listening to ominous noises reverberating through the jungle."
-  },
-  {
-    num: "03",
-    title: "The Village of Secrets",
-    content: "The group finds a village of people in outdated attire who speak an unintelligible dialect. They show 'otherworldly indifference' to the survivors' pleas, watching them with unnerving fascination from the tree line."
-  },
-  {
-    num: "04",
-    title: "The Temple of Shadows",
-    content: "They discover a moss-covered underground temple with murals of Noah's Ark. Legend says the Ark brought an 'element of evil' here, and a bitter ghost now veils the island in storms to prevent any man or machine from leaving."
-  },
-  {
-    num: "05",
-    title: "Descent into Madness",
-    content: "Paranoia sets in after Vikram vanishes, leaving only a blood-stained shirt at a stone altar. A rescue helicopter stalls mid-air before twirling grotesquely and disappearing behind the mountains."
-  },
-  {
-    num: "06",
-    title: "The Last Signal",
-    content: "Ajay finds an old military radio and contacts ATS Chennai. The survivors craft spears from landing gear struts and shields from paneling to defend their ridge until Navy gunfire pushes back the darkness."
-  }
+  { num: "01", title: "The Flight", content: "A massive explosion rocks Flight 1-472. Oxygen masks fall as the plane dives into pandemonium." },
+  { num: "02", title: "Stranded", content: "Puja awakens on a beach with 8 survivors. Ominous noises reverberate from the jungle." },
+  { num: "03", title: "Village of Secrets", content: "They find a village of outdated people who watch them with otherworldly indifference." },
+  { num: "04", title: "Temple of Shadows", content: "A forgotten temple reveals murals of Noah's Ark and a ghost that veils the island." },
+  { num: "05", title: "Descent into Madness", content: "Paranoia strikes as Vikram vanishes. A rescue helicopter stalls and careens mid-air." },
+  { num: "06", title: "The Last Signal", content: "Ajay repairs an old radio. The group prepares for one last night against the darkness." }
 ];
 
 export default function RahasyaPage() {
@@ -55,14 +31,33 @@ export default function RahasyaPage() {
           <div className={styles.container}>
             <span className={styles.label}>NARRATIVE BIBLE: VOL. 1</span>
             <h1 className={styles.title}>RAHASYA<span>.</span></h1>
-            <p className={styles.tagline}>"The island never lets go" — The Mystery of Flight 1-472.</p>
+            <p className={styles.tagline}>"The island never lets go" — Flight 1-472</p>
+            
+            {/* Direct PDF Link for Mobile/Desktop */}
+            <div className={styles.heroActions}>
+              <a href="/Rahasya_Vol_1_Story.pdf" target="_blank" className={styles.primaryBtn}>
+                Read Full Manuscript (PDF)
+              </a>
+            </div>
           </div>
         </div>
       </header>
 
       <div className={styles.container}>
+        {/* PDF Viewer Section */}
+        <section className={styles.pdfSection}>
+          <h2 className={styles.secTitle}>The Original Document</h2>
+          <div className={styles.pdfWrapper}>
+            <iframe 
+              src="/Rahasya_Vol_1_Story.pdf#toolbar=0" 
+              className={styles.pdfFrame}
+              title="Rahasya Story PDF"
+            ></iframe>
+          </div>
+        </section>
+
         {/* Chapters Section */}
-        <section className={styles.chaptersSection}>
+        <section className={styles.section}>
           <h2 className={styles.secTitle}>Mission Chapters</h2>
           <div className={styles.chapterGrid}>
             {chapters.map(ch => (
@@ -78,8 +73,8 @@ export default function RahasyaPage() {
         </section>
 
         {/* Survivors Section */}
-        <section className={styles.survivorSection}>
-          <h2 className={styles.secTitle}>The Nine Survivors</h2>
+        <section className={styles.section}>
+          <h2 className={styles.secTitle}>The Survivors</h2>
           <div className={styles.sGrid}>
             {survivors.map(s => (
               <div key={s.id} className={styles.sCard}>
@@ -87,7 +82,7 @@ export default function RahasyaPage() {
                   <h4>{s.name}</h4>
                   <span className={styles.sRole}>{s.role}</span>
                 </div>
-                <p>{s.bio || s.trait}</p>
+                <p>{s.bio}</p>
               </div>
             ))}
           </div>
@@ -98,8 +93,7 @@ export default function RahasyaPage() {
           <div className={styles.epiContent}>
             <h2>Epilogue: Erased from History</h2>
             <p>
-              Military intelligence denies the island's existence, claiming survivors were on a lifeboat. 
-              Satellite photos show only a tiny rocky outcropping—no jungle, no village, no temple. 
+              Satellite photos show only a tiny rocky outcropping—no jungle, no village exists. 
               Puja receives an anonymous package: a carved idol and a whisper.
             </p>
           </div>
