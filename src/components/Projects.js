@@ -106,19 +106,21 @@ export default function Projects() {
         <header className={styles.header}>
           <div className={styles.headerTop}>
             <span className={styles.label}>SELECTED ARCHIVE</span>
-            <div className={styles.arrowControls}>
-              <button className={styles.arrowBtn} onClick={prevSlide} aria-label="Previous">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M15 18l-6-6 6-6"/></svg>
-              </button>
-              <button className={styles.arrowBtn} onClick={() => { nextSlide(); setIsAuto(false); }} aria-label="Next">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M9 18l6-6-6-6"/></svg>
-              </button>
-            </div>
           </div>
           <h2 className={styles.mainTitle}>Featured Projects<span>.</span></h2>
         </header>
 
         <div className={styles.sliderFrame}>
+          {/* Arrows moved inside sliderFrame for absolute positioning */}
+          <div className={styles.arrowControls}>
+            <button className={styles.arrowBtn} onClick={prevSlide} aria-label="Previous">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <button className={styles.arrowBtn} onClick={() => { nextSlide(); setIsAuto(false); }} aria-label="Next">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+          </div>
+
           <div className={styles.viewport}>
             {projects.map((p, i) => (
               <div 

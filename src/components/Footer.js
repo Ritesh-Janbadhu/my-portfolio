@@ -21,7 +21,7 @@ export default function Footer() {
           <div className={styles.linksSide}>
             <div className={styles.linkGroup}>
               <span className={styles.groupTitle}>Contact</span>
-              <a href="mailto:riteshjanbandhu10@gmail.com" className={styles.link}>Email</a> 
+              <a  href="https://mail.google.com/mail/?view=cm&fs=1&to=riteshjanbandhu10@gmail.com"  className={styles.link}>Email</a> 
               {/* <a href="tel:+919673779109" className={styles.link}>+91-9673779109</a>  */}
             </div>
             <div className={styles.linkGroup}>

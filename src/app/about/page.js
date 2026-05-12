@@ -10,66 +10,66 @@ export default function AboutPage() {
         
         {/* Header Section */}
         <header className={styles.hero}>
-          <span className={styles.label}>STRATEGIC DESIGNER</span>
-          <h1 className={styles.title}>Merging Business Intelligence with Immersive Design<span>.</span></h1>
+          <span className={styles.label}>GAME DESIGNER & STRATEGIST</span>
+          <h1 className={styles.title}>Crafting Player-Centric Worlds with <span>Strategic Precision.</span></h1>
         </header>
 
-        {/* Professional Narrative Paragraph Section */}
+        {/* Professional Narrative Section */}
         <section className={styles.narrativeSection}>
           <div className={styles.paragraphBlock}>
             <p>
-              I am a dedicated <strong>Game Designer</strong> with over two years of professional experience in crafting complex gameplay systems and narrative-driven experiences. With a unique academic foundation—holding an <strong>MBA from Dr. Ambedkar Institute of Management Studies</strong> and a specialized certification in <strong>Game Design & Production from Gamer2Maker</strong>—I bridge the gap between creative storytelling and strategic business goals. 
+              I am a dedicated <strong>Game Designer</strong> with over two years of professional experience in developing complex gameplay systems and immersive narratives. My approach combines creative storytelling with a strong focus on <strong>player engagement</strong>, ensuring that every mechanic serves the overall experience.
             </p>
             <p>
-              My expertise lies in developing comprehensive <strong>Game Design Documents (GDD)</strong>, balancing intricate in-game economies, and designing player-centric progression loops. Currently contributing to the success of <strong>BooBoo Games</strong>, I specialize in cross-functional collaboration, ensuring that every technical implementation aligns with the core creative vision. From modeling IAP strategies in Excel to building atmospheric worlds for PC and Mobile, my goal is to design games that are not just played, but remembered.
+              Specializing in <strong>Narrative Design, Game Economy, and System Architecture</strong>, I excel at turning high-level concepts into detailed, actionable Game Design Documents (GDD). Currently at <strong>BooBoo Games</strong>, I lead the design of gameplay flows and retention loops for mobile titles, working in close collaboration with cross-functional teams to deliver high-quality features.
             </p>
           </div>
         </section>
 
-        {/* Stats / Skills Grid */}
+        {/* Strategic Grid */}
         <div className={styles.statsGrid}>
           <div className={styles.statBox}>
             <span className={styles.statValue}>2+</span>
             <span className={styles.statLabel}>Years Experience</span>
           </div>
           <div className={styles.statBox}>
-            <span className={styles.statValue}>10+</span>
-            <span className={styles.statLabel}>System Designs</span>
+            <span className={styles.statValue}>Core</span>
+            <span className={styles.statLabel}>System Architect</span>
           </div>
           <div className={styles.statBox}>
-            <span className={styles.statValue}>MBA</span>
-            <span className={styles.statLabel}>Strategic Edge</span>
+            <span className={styles.statValue}>Strategic</span>
+            <span className={styles.statLabel}>Design Edge</span>
           </div>
         </div>
 
-        {/* Academic & Professional Timeline */}
+        {/* Professional Milestones Timeline */}
         <section className={styles.timeline}>
           <div className={styles.timelineItem}>
             <div className={styles.timeLabel}>PRESENT</div>
             <div className={styles.timeContent}>
               <h3>Game Designer</h3>
-              <p>BooBoo Games | Focus on System & Narrative Design</p>
+              <p>BooBoo Games | Developing systems and economy for mobile titles</p>
+            </div>
+          </div>
+          <div className={styles.timelineItem}>
+            <div className={styles.timeLabel}>2025</div>
+            <div className={styles.timeContent}>
+              <h3>Game Designer</h3>
+              <p>Gameink Studios | Led quest-based narrative systems</p>
             </div>
           </div>
           <div className={styles.timelineItem}>
             <div className={styles.timeLabel}>2024</div>
             <div className={styles.timeContent}>
-              <h3>Game Design Graduate</h3>
-              <p>Gamer2Maker | Specialized in Narrative & Production</p>
-            </div>
-          </div>
-          <div className={styles.timelineItem}>
-            <div className={styles.timeLabel}>2023</div>
-            <div className={styles.timeContent}>
-              <h3>MBA (Marketing)</h3>
-              <p>Dr. Ambedkar Institute of Management Studies</p>
+              <h3>Narrative Designer</h3>
+              <p>Sherlock Studios | Designed narrative-driven puzzles</p>
             </div>
           </div>
         </section>
 
-        {/* CTA */}
+        {/* Contact Footer */}
         <footer className={styles.aboutFooter}>
-          <p>Interested in collaborating on a narrative or system design project?</p>
+          <p>Ready to build something immersive together?</p>
           <a href="mailto:riteshjanbandhu10@gmail.com" className={styles.contactLink}>
             riteshjanbandhu10@gmail.com
           </a>

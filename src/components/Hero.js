@@ -1,9 +1,12 @@
+"use client";
+
+import Link from 'next/link';
 import styles from './Hero.module.css';
 
 export default function Hero() {
   return (
     <section className={styles.heroSection}>
-      {/* Background Cubes Pattern - Restricted to this section only */}
+      {/* Background Cubes Pattern */}
       <div className={styles.cubePattern}></div>
 
       <div className={styles.container}>
@@ -33,20 +36,26 @@ export default function Hero() {
                 <h3 className={styles.sectionTitle}>About Myself</h3>
                 <p className={styles.bio}>
                   I am a game designer with 2 years of experience designing quest systems, 
-                  progression-driven narratives, and immersive gameplay[cite: 2]. 
-                  I focus on player engagement and iterative design based on feedback[cite: 2].
+                  progression-driven narratives, and immersive gameplay. 
+                  I focus on player engagement and iterative design based on feedback.
                 </p>
               </div>
 
-              <div className={styles.skillRow}>
-                <span>System Design</span>
-                <span>UI/UX</span>
-                <span>Economy Balancing</span>
-              </div>
-
               <div className={styles.ctaRow}>
-                <button className={styles.btnGold}>Explore Portfolio</button>
-                <button className={styles.btnOutline}>Contact</button>
+                {/* Link to Resume Page */}
+                <Link href="/resume" className={styles.btnGold}>
+                  Explore Portfolio
+                </Link>
+
+                {/* Direct Gmail Link */}
+                <a 
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=riteshjanbandhu10@gmail.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className={styles.btnOutline}
+                >
+                  Contact
+                </a>
               </div>
             </div>
 

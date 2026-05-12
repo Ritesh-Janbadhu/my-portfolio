@@ -6,9 +6,7 @@
   position: relative;
   overflow: hidden;
   padding: 20px;
-  /* background-color: #e8e7e7; */
   background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
-  /* filter: invert(1) brightness(0.2); */
 }
 
 .cubePattern {
@@ -21,12 +19,12 @@
 
 .container {
   width: 100%;
-  max-width: 95%; /* Standard compact size */
+  max-width: 95%;
   z-index: 5;
 }
 
 .standardCard {
-  background: #cbcece80; /* Premium Navy */
+  background: #cbcece80;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 40px 100px rgba(0, 0, 0, 0.2);
@@ -130,21 +128,6 @@
   margin-bottom: 25px;
 }
 
-.skillRow {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-bottom: 35px;
-}
-
-.skillRow span {
-  font-size: 0.7rem;
-  background: rgba(255, 255, 255, 0.05);
-  padding: 5px 12px;
-  border-radius: 4px;
-  color: #6f7882;
-}
-
 .ctaRow {
   display: flex;
   gap: 15px;
@@ -160,6 +143,13 @@
   cursor: pointer;
   font-size: 0.85rem;
   transition: 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btnGold:hover {
+  background: #b8962d;
+  transform: translateY(-2px);
 }
 
 .btnOutline {
@@ -171,6 +161,15 @@
   font-weight: 600;
   cursor: pointer;
   font-size: 0.85rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.btnOutline:hover {
+  background: rgba(51, 65, 85, 0.1);
+  border-color: #d4af37;
+  color: #000;
 }
 
 /* RESPONSIVE DESIGN */
@@ -188,7 +187,7 @@
     padding: 30px;
     text-align: center;
   }
-  .badgeRow, .skillRow, .ctaRow {
+  .badgeRow, .ctaRow {
     justify-content: center;
   }
   .userName {
@@ -205,5 +204,6 @@
   }
   .btnGold, .btnOutline {
     width: 100%;
+    text-align: center;
   }
 }

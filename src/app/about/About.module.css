@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Outfit:wght@300;400;600&display=swap');
 
 .main {
-  background-color: #080808;
+  background-color: #050505;
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Outfit', sans-serif;
   min-height: 100vh;
 }
 
@@ -21,33 +21,33 @@
 .label {
   font-size: 0.7rem;
   font-weight: 800;
-  color: #6366f1;
+  color: #d4af37;
   letter-spacing: 4px;
   text-transform: uppercase;
 }
 
 .title {
   font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-size: clamp(2rem, 5vw, 3.2rem);
   margin-top: 15px;
-  line-height: 1.1;
-  letter-spacing: -2px;
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+  max-width: 800px;
 }
 
-.title span { color: #6366f1; }
+.title span { color: #d4af37; }
 
-/* Paragraph Styling */
+/* Paragraph Block */
 .narrativeSection {
   margin-bottom: 80px;
 }
 
 .paragraphBlock p {
-  font-size: clamp(1rem, 2vw, 1.15rem);
+  font-size: clamp(1rem, 2vw, 1.1rem);
   line-height: 1.8;
   color: #94a3b8;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   max-width: 850px;
-  font-weight: 400;
 }
 
 .paragraphBlock strong {
@@ -55,7 +55,7 @@
   font-weight: 600;
 }
 
-/* Stats Grid */
+/* Strategic Grid */
 .statsGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -64,28 +64,31 @@
 }
 
 .statBox {
-  padding: 30px;
-  background: #111;
+  padding: 35px 25px;
+  background: #0f0f0f;
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 20px;
+  text-align: center;
 }
 
 .statValue {
   display: block;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 800;
-  color: #6366f1;
+  color: #d4af37;
+  margin-bottom: 5px;
 }
 
 .statLabel {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: #64748b;
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-weight: 600;
 }
 
-/* Timeline */
+/* Professional Timeline */
 .timeline {
   border-left: 2px solid #1a1a1a;
   margin-bottom: 80px;
@@ -94,7 +97,7 @@
 
 .timelineItem {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .timelineItem::before {
@@ -102,29 +105,31 @@
   position: absolute;
   left: -41px;
   top: 5px;
-  width: 20px;
-  height: 20px;
-  background: #080808;
-  border: 4px solid #6366f1;
+  width: 18px;
+  height: 18px;
+  background: #050505;
+  border: 4px solid #d4af37;
   border-radius: 50%;
 }
 
 .timeLabel {
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   font-weight: 800;
-  color: #6366f1;
-  margin-bottom: 5px;
+  color: #d4af37;
+  margin-bottom: 8px;
 }
 
 .timeContent h3 {
   font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   color: #fff;
+  margin-bottom: 5px;
 }
 
 .timeContent p {
   color: #64748b;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 /* Footer Section */
@@ -137,11 +142,12 @@
 .aboutFooter p {
   color: #94a3b8;
   margin-bottom: 15px;
+  font-size: 1rem;
 }
 
 .contactLink {
   font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
   font-weight: 800;
   color: #fff;
   text-decoration: none;
@@ -149,13 +155,13 @@
 }
 
 .contactLink:hover {
-  color: #6366f1;
+  color: #d4af37;
 }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  .container { padding: 80px 20px; }
+  .container { padding: 60px 20px; }
   .statsGrid { grid-template-columns: 1fr; }
   .timeline { margin-left: 10px; }
-  .contactLink { font-size: 1.1rem; }
+  .timelineItem::before { left: -41px; }
 }

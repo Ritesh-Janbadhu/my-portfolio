@@ -4,6 +4,7 @@ import styles from './Crystalline.module.css';
 import Footer from '@/components/Footer';
 
 export default function CrystallineDetail() {
+  const itchLink = "https://itch.io/queue/c/4649600/gamejam-281?game_id=2877994&password=";
   const figmaLink = "https://www.figma.com/proto/SkyYSXhX9c8QRgTOuJZ3yz/Untitled?page-id=185%3A2&node-id=187-25&node-type=canvas&viewport=-25%2C617%2C0.07&t=tpxOjCCe9dkuIrK5-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=187%3A25";
 
   return (
@@ -16,12 +17,16 @@ export default function CrystallineDetail() {
             <h1 className={styles.title}>CRYSTALLINE<span>.</span></h1>
             <p className={styles.tagline}>Dive deep to break the curse. The ocean is your only sanctuary.</p>
             
-            <a href={figmaLink} target="_blank" rel="noopener noreferrer" className={styles.playBtn}>
-              Play Prototype
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
-                <path d="M5 12h14M12 5l7 7-7 7"/>
-              </svg>
-            </a>
+            {/* Immersive Play Button */}
+            <div className={styles.btnGroup}>
+              <a href={itchLink} target="_blank" rel="noopener noreferrer" className={styles.playBtn}>
+                <span className={styles.pulse}></span>
+                PLAY ON ITCH.IO
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </header>
@@ -38,7 +43,7 @@ export default function CrystallineDetail() {
               </p>
               <div className={styles.specs}>
                 <div className={styles.spec}><strong>Engine:</strong> Unity</div>
-                <div className={styles.spec}><strong>Platform:</strong> Desktop</div>
+                <div className={styles.spec}><strong>Platform:</strong> Desktop / Web</div>
                 <div className={styles.spec}><strong>Genre:</strong> Top-Down Adventure</div>
               </div>
             </div>
@@ -81,13 +86,20 @@ export default function CrystallineDetail() {
           </div>
         </section>
 
-        {/* Technical Summary */}
+        {/* Technical Summary & Figma Access */}
         <section className={styles.conclusion}>
-          <h3>Project Summary</h3>
-          <p>Integrated time-pressure mechanics with a top-down adventure aesthetic, delivering a high-stakes survival loop through atmospheric sound and responsive level design.</p>
-          <a href={figmaLink} target="_blank" rel="noopener noreferrer" className={styles.secondaryBtn}>
-            View Design Files in Figma
-          </a>
+          <div className={styles.finalBox}>
+            <h3>Project Summary</h3>
+            <p>Integrated time-pressure mechanics with a top-down adventure aesthetic, delivering a high-stakes survival loop through atmospheric sound and responsive level design.</p>
+            <div className={styles.footerBtns}>
+               <a href={figmaLink} target="_blank" rel="noopener noreferrer" className={styles.secondaryBtn}>
+                VIEW FIGMA PROTOTYPE
+              </a>
+              <a href={itchLink} target="_blank" rel="noopener noreferrer" className={styles.secondaryBtn}>
+                VIEW ON ITCH.IO
+              </a>
+            </div>
+          </div>
         </section>
       </div>
 

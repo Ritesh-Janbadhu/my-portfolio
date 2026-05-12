@@ -27,23 +27,33 @@
   letter-spacing: 4px;
 }
 
-/* Arrow Styling */
+/* Updated Arrow Controls - Positioned over slider */
 .arrowControls {
+  position: absolute;
+  top: 190px; /* Viewport height 380px ka half taaki center dikhe */
+  left: 0;
+  right: 0;
   display: flex;
-  gap: 12px;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 10;
+  pointer-events: none; /* Allows clicking through the container */
+  transform: translateY(-50%);
 }
 
 .arrowBtn {
   width: 42px;
   height: 42px;
   border-radius: 12px;
-  background: #1a1a1a;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(26, 26, 26, 0.8); /* Semi-transparent for overlapping */
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  pointer-events: auto; /* Re-enables clicking for buttons */
   transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -52,7 +62,7 @@
 .arrowBtn:hover {
   background: #6366f1;
   border-color: #6366f1;
-  transform: translateY(-2px);
+  transform: scale(1.1);
 }
 
 .mainTitle {
@@ -191,7 +201,6 @@
 
 .navBar {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
   background: #1a1a1a;
 }
 
@@ -237,7 +246,9 @@
   .imgOverlay { background: linear-gradient(0deg, rgba(20,20,20,1) 10%, transparent); }
   .textPart { padding: 30px 20px; }
   .pTitle { font-size: 1.8rem; }
-  .arrowControls { gap: 8px; }
+  
+  /* Responsive Arrows Positioning */
+  .arrowControls { top: 110px; padding: 0 10px; } /* Image center in mobile (220px height) */
   .arrowBtn { width: 36px; height: 36px; border-radius: 8px; }
 }
 
@@ -248,4 +259,4 @@
   .navDot { padding: 0; }
   .progressBase { width: 8px; height: 8px; border-radius: 50%; }
   .navActive .progressBase { background: #6366f1; border: 2px solid #fff; }
-} 
+}

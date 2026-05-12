@@ -4,6 +4,8 @@ import styles from './DragonOrbs.module.css';
 import Footer from '@/components/Footer';
 
 export default function DragonOrbsDetail() {
+  const gameLink = "https://find-the-dragon-orbs.itch.io/find-the-dragon-orbs";
+
   return (
     <main className={styles.main}>
       {/* Hero Section */}
@@ -13,6 +15,18 @@ export default function DragonOrbsDetail() {
             <span className={styles.label}>ARCADE ACTION CASE STUDY</span>
             <h1 className={styles.title}>FIND THE<span> DRAGON ORBS</span></h1>
             <p className={styles.tagline}>When the book opens, hell rises. Seven orbs to save the world.</p>
+            
+            {/* Attractive Play Button */}
+            <div className={styles.ctaWrapper}>
+              <a href={gameLink} target="_blank" rel="noopener noreferrer" className={styles.playButton}>
+                <span className={styles.btnText}>PLAY ON ITCH.IO</span>
+                <span className={styles.btnIcon}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </span>
+              </a>
+            </div>
           </div>
         </div>
       </header>
@@ -30,8 +44,8 @@ export default function DragonOrbsDetail() {
               </p>
               <div className={styles.specs}>
                 <div className={styles.spec}><strong>Engine:</strong> Unity</div>
-                <div className={styles.spec}><strong>Platform:</strong> Desktop</div>
-                <div className={styles.spec}><strong>Genre:</strong> Top-Down, Action, Arcade</div>
+                <div className={styles.spec}><strong>Platform:</strong> Desktop / Web</div>
+                <div className={styles.spec}><strong>Genre:</strong> Top-Down Action</div>
               </div>
             </div>
             <div className={styles.roleCard}>
@@ -53,39 +67,35 @@ export default function DragonOrbsDetail() {
             <div className={styles.fCard}>
               <div className={styles.fIcon}>✍️</div>
               <h4>Narrative & Concept</h4>
-              <p>Conceptualized the world of Gyru, wrote the full story script, and established the lore of the rising book-islands.</p>
+              <p>Conceptualized the world of Gyru, wrote the full story script, and established the lore of the rising islands.</p>
             </div>
             <div className={styles.fCard}>
               <div className={styles.fIcon}>🏗️</div>
               <h4>Level & Puzzle Design</h4>
-              <p>Designed the concept levels and integrated complex logic puzzles that players must solve to reach the Orbs.</p>
+              <p>Integrated complex logic puzzles that players must solve to reach the hidden Orbs.</p>
             </div>
             <div className={styles.fCard}>
-              <div className={styles.fIcon}>📱</div>
-              <h4>UI/UX Design</h4>
-              <p>Created the entire wireframing and interactive prototyping for the game's interface using Figma.</p>
+              <div className={styles.fIcon}>🎨</div>
+              <h4>UI/UX Prototyping</h4>
+              <p>Built complete interactive prototyping for the game's interface and HUD using Figma.</p>
             </div>
             <div className={styles.fCard}>
               <div className={styles.fIcon}>🔊</div>
-              <h4>Sound Design</h4>
-              <p>Engineered the SFX and edited the background music to match the high-energy arcade atmosphere.</p>
+              <h4>Arcade Soundscape</h4>
+              <p>Engineered high-energy SFX and edited background music to match the arcade atmosphere.</p>
             </div>
           </div>
         </section>
 
-        {/* Visual Gallery Placeholder */}
-        {/* <section className={styles.section}>
-          <h2 className={styles.secTitle}>Visual Archive</h2>
-          <div className={styles.gallery}>
-            <div className={styles.imgPlaceholder}>[CONCEPT LEVEL DESIGN]</div>
-            <div className={styles.imgPlaceholder}>[FIGMA UI PROTOTYPE]</div>
-          </div>
-        </section> */}
-
         {/* Technical Summary */}
         <section className={styles.conclusion}>
-          <h3>Mission Result</h3>
-          <p>Created a cohesive top-down experience by balancing fast-paced arcade action with deep narrative stakes and strategic level design.</p>
+          <div className={styles.finalCta}>
+            <h3>Ready to retrieve the Orbs?</h3>
+            <p>Experience the fast-paced arcade action and strategic level design firsthand.</p>
+            <a href={gameLink} target="_blank" rel="noopener noreferrer" className={styles.secondaryBtn}>
+              LAUNCH MISSION ON ITCH.IO
+            </a>
+          </div>
         </section>
       </div>
 

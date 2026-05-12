@@ -35,7 +35,7 @@ export default function RahasyaPage() {
             
             {/* Direct PDF Link for Mobile/Desktop */}
             <div className={styles.heroActions}>
-              <a href="/Rahasya_Vol_1_Story.pdf" target="_blank" className={styles.primaryBtn}>
+              <a href="https://drive.google.com/file/d/1nyDRJP1RW8sG1XwjHiGhhDD1SwjWsX2_/view?usp=sharing" target="_blank" className={styles.primaryBtn}>
                 Read Full Manuscript (PDF)
               </a>
             </div>
@@ -89,7 +89,7 @@ export default function RahasyaPage() {
         </section>
 
         {/* Epilogue Section */}
-        <section className={styles.epilogue}>
+        {/* <section className={styles.epilogue}>
           <div className={styles.epiContent}>
             <h2>Epilogue: Erased from History</h2>
             <p>
@@ -97,7 +97,7 @@ export default function RahasyaPage() {
               Puja receives an anonymous package: a carved idol and a whisper.
             </p>
           </div>
-        </section>
+        </section> */}
       </div>
       <Footer />
     </main>
