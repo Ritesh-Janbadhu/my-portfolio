@@ -44,7 +44,7 @@ export default function Hero() {
               <div className={styles.ctaRow}>
                 {/* Link to Resume Page */}
                 <Link href="/resume" className={styles.btnGold}>
-                  Explore Portfolio
+                  Resume
                 </Link>
 
                 {/* Direct Gmail Link */}

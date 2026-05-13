@@ -7,7 +7,7 @@
 .hero {
   height: 70vh;
   background: linear-gradient(to bottom, #080808, transparent), 
-              url('https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1200') center/cover;
+              url('/dragonbg.jpeg') center/cover;
   display: flex; align-items: flex-end;
 }
 .heroOverlay { width: 100%; padding-bottom: 80px; background: linear-gradient(0deg, #080808 15%, transparent 100%); }

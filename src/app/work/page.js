@@ -29,7 +29,7 @@ const projectSections = [
         category: "Level Design",
         context: "Action RPG Progression",
         tags: ["Unity", "UI/UX"],
-        image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=800",
+        image: "/dragonbg.jpeg",
         color: "#6366f1"
       },
       {
@@ -44,7 +44,7 @@ const projectSections = [
     ]
   },
   {
-    title: "Speech",
+    title: "Game Pitch",
     projects: [
       {
         id: "spider-rider",

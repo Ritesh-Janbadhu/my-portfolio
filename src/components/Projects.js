@@ -9,7 +9,7 @@ const projects = [
     title: "Find The Dragon Orbs",
     role: "Narrative & UI/UX Designer",
     desc: "A premium game concept focusing on immersive narrative structure, player agency, and intuitive UX flows.",
-    image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1200",
+    image: "/dragonbg.jpeg",
     tags: ["Unity", "Figma", "GDD"],
     color: "#6366f1",
     link: "/work/dragon-orbs"
